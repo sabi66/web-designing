@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Configure button</title>
+	<style type="text/css">
+		.container{
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.toggle-btn{
+			width: 80px;
+			height: 40px;
+			background: gray;
+			border-radius: 30px;
+			padding: 5px;
+		}
+
+		.toggle-btn > .inner-circle{
+			width: 40px;
+			height: 40px;
+			background: #fff;
+		}
+
+		.nav-secntion-end{
+			border-bottom: solid 1px #e7e7e7;
+		}
+
+		.night {
+			color: #fff;
+			background-color: darkgrey;
+		}
+		
+		.day {
+			color: #000;
+			background-color: #fff;
+		}
+
+		#high-contrast,
+		.high-contrast{
+			color: #ffff00;
+			background-color: black;
+		}
+
+		.high-contrast a {
+			color:white;
+		}
+
+		/*GOTO top */
+		#goto_top {
+			display: none;
+			position: fixed;
+			bottom: 1vh;
+			right: 1vw;
+			z-index: 99;
+			border: none;
+			background-color: #f6f8f8;
+			color: #677514;
+			font-weight: bolder;
+			cursor: pointer;
+			padding: 1vw;
+			border-radius: 5em;
+			width: auto;
+		}
+
+		#goto_top:hover {
+			background-color: #e1c56e;
+		}
+	</style>
+</head>
+<body id="body-root">	
+	<div class="container">
+		<div class="toggle-btn">
+			<div class="inner-circle"></div>
+		</div>
+	</div>
+	<div class="nav-section-end">
+		<nav>
+			<ul id="color-scheme">
+				<li>
+					<button onclick="changeBodyClass('day')">Day</button>
+					<button onclick="changeBodyClass('night')">Night</button>
+					<button onclick="changeBodyClass('high-contrast')">High Contrast</button>
+				</li>
+			</ul>
+		</nav>
+	</div>	
+
+	<div>
+		<h2>This is a very very long text to add scroll.</h2>
+		<br>
+		<p>
+			Nepal, country of Asia, lying along the southern slopes of the Himalayan mountain ranges. It is a landlocked country located between India to the east, south, and west and the Tibet Autonomous Region of China to the north. Its territory extends roughly 500 miles (800 kilometres) from east to west and 90 to 150 miles from north to south. The capital is Kathmandu.
+		</p>
+		<p>
+			Nepal, long under the rule of hereditary prime ministers favouring a policy of isolation, remained closed to the outside world until a palace revolt in 1950 restored the crown’s authority in 1951; the country gained admission to the United Nations in 1955. In 1991 the kingdom established a multiparty parliamentary system. In 2008, however, after a decadelong period of violence and turbulent negotiation with a strong Maoist insurgency, the monarchy was dissolved, and Nepal was declared a democratic republic.
+		</p>
+		<p>
+			Wedged between two giants, India and China, Nepal seeks to keep a balance between the two countries in its foreign policy—and thus to remain independent. A factor that contributes immensely to the geopolitical importance of the country is the fact that a strong Nepal can deny China access to the rich Gangetic Plain; Nepal thus marks the southern boundary of the Chinese sphere north of the Himalayas in Asia.
+		</p>
+		<p>
+			As a result of its years of geographic and self-imposed isolation, Nepal is one of the least developed nations of the world. In recent years many countries, including India, China, the United States, the United Kingdom, Japan, Denmark, Germany, Canada, and Switzerland, have provided economic assistance to Nepal. The extent of foreign aid to Nepal has been influenced to a considerable degree by the strategic position of the country between India and China.
+		</p>
+		<p>
+			Nepal contains some of the most rugged and difficult mountain terrain in the world. Roughly 75 percent of the country is covered by mountains. From the south to the north, Nepal can be divided into four main physical belts, each of which extends east to west across the country. These are, first, the Tarai, a low, flat, fertile land adjacent to the border of India; second, the forested Churia foothills and the Inner Tarai zone, rising from the Tarai plain to the rugged Mahābhārat Range; third, the mid-mountain region between the Mahābhārat Range and the Great Himalayas; and, fourth, the Great Himalaya Range, rising to more than 29,000 feet (some 8,850 metres).
+		</p>
+		<p>
+			The Tarai forms the northern extension of the Gangetic Plain and varies in width from less than 16 to more than 20 miles, narrowing considerably in several places. A 10-mile-wide belt of rich agricultural land stretches along the southern part of the Tarai; the northern section, adjoining the foothills, is a marshy region in which wild animals abound and malaria is endemic.
+		</p>
+		<p>
+			The Churia Range, which is sparsely populated, rises in almost perpendicular escarpments to an altitude of more than 4,000 feet. Between the Churia Range to the south and the Mahābhārat Range to the north, there are broad basins from 2,000 to 3,000 feet high, about 10 miles wide, and 20 to 40 miles long; these basins are often referred to as the Inner Tarai. In many places they have been cleared of the forests and savanna grass to provide timber and areas for cultivation.
+		</p>
+		<p>
+			A complex system of mountain ranges, some 50 miles in width and varying in elevation from 8,000 to 14,000 feet, lie between the Mahābhārat Range and the Great Himalayas. The ridges of the Mahābhārat Range present a steep escarpment toward the south and a relatively gentle slope toward the north. To the north of the Mahābhārat Range, which encloses the valley of Kāthmāndu, are the more lofty ranges of the Inner Himalaya (Lesser Himalaya), rising to perpetually snow-covered peaks. The Kāthmāndu and the Pokharā valleys lying within this mid-mountain region are flat basins, formerly covered with lakes, that were formed by the deposition of fluvial and fluvioglacial material brought down by rivers and glaciers from the enclosing ranges during the four glacial and intervening warm phases of the Pleistocene Epoch (from about 2,600,000 to 11,700 years ago).
+		</p>
+		<p>
+			The Great Himalaya Range, ranging in elevation from 14,000 to more than 29,000 feet, contains many of the world’s highest peaks—Everest, Kānchenjunga I, Lhotse I, Makālu I, Cho Oyu, Dhaulāgiri I, Manāslu I, and Annapūrna I—all of them above 26,400 feet. Except for scattered settlements in high mountain valleys, this entire area is uninhabited.
+		</p>
+		<p>
+			It was founded in 723 by Raja Gunakamadeva. Its early name was Manju-Patan; the present name refers to a wooden temple (kath, “wood”; mandir, “temple” or “edifice”) said to have been built from the wood of a single tree by Raja Lachmina Singh in 1596. A building, supposedly the original, still stands in the central square and is used for the accommodation of sadhus (holy men). Kathmandu served as the seat of the ruling Shah family of the Gurkha people from 1768 to 2008.
+		</p>
+	</div>	
+
+	<button onclick="gotoTop()" id="goto_top">^</button>
+
+	<script>
+		function changeBodyClass(className = 'day')
+		{
+			var bodyRoot = document.getElementById('body-root');
+			var classes = bodyRoot.classList;
+			classes.remove('day','night','high-contrast');
+			classes.add(className);
+		}
+
+		var gotoTopBtn = document.getElementById("goto_top");
+
+
+		function gotoTop() {
+			window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+            });
+		}
+
+		window.onscroll = function() {gotoScroll()};
+
+		function gotoScroll() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				gotoTopBtn.style.display = "block";
+			} else {
+				gotoTopBtn.style.display = "none";
+			}
+		}
+
+
+		
+	</script>
+
+</body>
+</html>
